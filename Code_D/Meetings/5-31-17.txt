@@ -1,0 +1,28 @@
+Learn password hashing/cracking more
+
+Look at OWASP Wiki
+
+Enigma Machine - Bombah Machine(enigma cracker)
+
+APT's - Advanced Persistent Threats
+
+Proxies
+
+Digg - NCCDC
+
+PERIMETER SECURITY
+Border Router
+Firewall
+IDS(Intrusion Detection System)
+IPS(Intrusion Protection System)
+VPN(Virtual Private Network)
+Software Architecture
+DMZ
+Screen Subnets
+
+A perimeter is a fortified boundary that can include any of the above
+
+Firewalls
+ -Static Pocket Filter
+ -Stateful Firewalls
+  -Proxies
