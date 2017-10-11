@@ -1,0 +1,320 @@
+/* Global CSS */
+
+html,
+body {
+    height 100%;
+    font-family: 'Muli', sans-serif;
+}
+
+.bg-dark-gray {
+    border-color: #3A3A3A;
+}
+
+.bg-offwhite {
+    border-color: #f1f1f1;
+}
+
+
+/* Navbar */
+
+body .navbar-dark .navbar-brand {
+    font-size: 50px;
+    color: #fff;
+}
+
+body .navbar-dark .navbar-brand span {
+    color: #E31837;
+}
+
+body .navbar-dark .navbar-nav .active>.nav-link {
+    color: rgba(227, 24, 55, 0.75);
+}
+
+body .navbar-dark .navbar-nav .nav-link {
+    font-size: 35px;
+    color: rgba(241, 241, 241, 0.8);
+}
+
+
+/* Header */
+
+
+/*body .header {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background: url(../imgs/bg.jpg) no-repeat center center scroll;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
+#cover {
+    color: #fff;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background: #222 url(../imgs/bg.jpg) no-repeat top center scroll;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#cover-caption {
+    width: 100%;
+}
+
+#whoWeAre,
+#about,
+#connect {
+    padding: 5.5em 0;
+}
+
+
+/*Who We Are */
+
+#whoWeAre h5 {
+    letter-spacing: 0.9px;
+    line-height: 200%;
+    padding-top: 2em;
+}
+
+#whoWeAre h1,
+#about h1,
+#connect h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+
+/* Callout 1 */
+
+body .callout {
+    display: table;
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    background: url(../imgs/callout.jpg) no-repeat top center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* About Us */
+
+.bg-light-grey {
+    background-color: #E1E1E1;
+}
+
+#about .row-regular {
+    padding: 3.5em 0 1em 0;
+}
+
+#about .row-reverse {
+    flex-direction: row-reverse;
+    padding: 3.5em 0 1em 0;
+}
+
+#about img {
+    border-radius: 50%;
+}
+
+#about .main-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 3em 0 3em;
+}
+
+#about h3 {
+    line-height: 125%;
+}
+
+#about h5 {
+    line-height: 175%;
+}
+
+
+/* Callout 2 */
+
+body .callout2 {
+    display: table;
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    background: url(../imgs/callout2.jpg) no-repeat center center scroll;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* Connect With Us */
+
+#connect .title {
+    padding-top: 2em;
+}
+
+
+/* Form */
+
+form {
+    padding-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    letter-spacing: 4px;
+    padding-top: 0.5em;
+    width: 100%
+    /*text-align: center;*/
+}
+
+label .label-text {
+    color: #9B9B9B;
+    cursor: text;
+    font-size: 1.1em;
+    line-height: 20px;
+    text-transform: uppercase;
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    transition: all 0.3s;
+}
+
+label input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #4A4A4A;
+    color: #000;
+    font-size: 2em;
+    letter-spacing: -1px;
+    outline: 0;
+    padding: 5px 10px;
+    /*text-align: center;*/
+    transition: all 0.3s;
+    width: 100%;
+}
+
+label input:focus {
+    width: 100%;
+    border-bottom: 2px solid #E31837;
+}
+
+label input:focus+.label-text {
+    color: #E31837;
+    font-size: 0.8em;
+    -moz-transform: translateY(-70px);
+    -ms-transform: translateY(-70px);
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70);
+}
+
+label input:valid+.label-text {
+    font-size: 13px;
+    -moz-transform: translateY(-74px);
+    -ms-transform: translateY(-74px);
+    -webkit-transform: translateY(-74px);
+    transform: translateY(-74px);
+}
+
+button {
+    background-color: #333333;
+    border: 2px solid white;
+    border-radius: 27px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 0.75em;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: all 200ms;
+}
+
+button:hover,
+button:focus {
+    border-color: #E31837;
+    background-color: white;
+    color: #333333;
+    outline: 0;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #0E0E0E;
+    color: #3A3A3A;
+    padding: 50px 0;
+}
+
+footer h5 {
+    padding: -5px 0;
+}
+
+footer .foot-links {
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: #BCABAE;
+}
+
+footer h4 {
+    letter-spacing: 0.5px;
+}
+
+footer a:hover,
+footer a:active {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.img-hover:hover {
+    opacity: 0.7;
+}
+
+footer img:hover {
+    -webkit-animation: spin 0.65s cubic-bezier(0.57, -0.75, 0.46, 0.83);
+    -moz-animation: spin 0.65s cubic-bezier(0.57, -0.75, 0.46, 0.83);
+    animation: spin 0.65s cubic-bezier(0.57, -0.75, 0.46, 0.83);
+}
+
+@-webkit-keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
