@@ -17,22 +17,65 @@ body {
 
 /* Navbar */
 
-body .navbar-dark .navbar-brand {
-    font-size: 50px;
-    color: #fff;
+#menu-toggle {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    border: 0.25px solid #999;
+    right: 0;
 }
 
-body .navbar-dark .navbar-brand span {
+.toggle {
+    font-size: 1em;
+    margin: 10px 10px 0 0;
+    padding: 12px 18px;
+}
+
+.sidebar-nav span {
     color: #E31837;
 }
 
-body .navbar-dark .navbar-nav .active>.nav-link {
-    color: rgba(227, 24, 55, 0.75);
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+    font-size: 25px;
 }
 
-body .navbar-dark .navbar-nav .nav-link {
-    font-size: 35px;
-    color: rgba(241, 241, 241, 0.8);
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+    transition: color 0.3s ease-out;
+}
+
+.sidebar-nav li a {
+    font-size: 17px;
+    margin: 6px 0px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: none;
+}
+
+.hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #E31837;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 
@@ -75,7 +118,7 @@ body .navbar-dark .navbar-nav .nav-link {
 #whoWeAre,
 #about,
 #connect {
-    padding: 5.5em 0;
+    padding: 10em 0;
 }
 
 
@@ -115,6 +158,11 @@ body .callout {
 
 .bg-light-grey {
     background-color: #E1E1E1;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
 }
 
 #about .row-regular {
@@ -240,8 +288,8 @@ label input:valid+.label-text {
 }
 
 button {
-    background-color: #333333;
-    border: 2px solid white;
+    background-color: #333;
+    border: 2px solid #333;
     border-radius: 27px;
     color: white;
     cursor: pointer;
@@ -265,7 +313,7 @@ button:focus {
 
 footer {
     background-color: #0E0E0E;
-    color: #3A3A3A;
+    color: #4A4A4A;
     padding: 50px 0;
 }
 

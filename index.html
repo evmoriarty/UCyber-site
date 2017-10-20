@@ -22,6 +22,9 @@
     <!-- Animate.css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 
+    <!-- Hover.css -->
+    <link href="vendor/bootstrap/css/hover.min.css" rel="stylesheet">
+
     <!-- Custom Stylesheet -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet">
@@ -31,7 +34,7 @@
 
 </head>
 
-<body>
+<body id="top">
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
         <i class="fa fa-bars"></i>
@@ -42,13 +45,13 @@
                 <i class="fa fa-times"></i>
             </a>
             <li class="sidebar-brand">
-                <a class="js-scroll-trigger" href="#top">Home</a>
+                <a class="js-scroll-trigger" href="#top">Cyber@<span>UC</span></a>
             </li>
             <li>
-                <a class="js-scroll-trigger" href="#about">Members</a>
+                <a class="js-scroll-trigger hvr-sweep-to-right" href="#about">Members</a>
             </li>
             <li>
-                <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a>
+                <a class="js-scroll-trigger hvr-sweep-to-right" href="#connect" onclick=$( "#menu-close").click();>Contact</a>
             </li>
         </ul>
     </nav>
@@ -57,7 +60,7 @@
     <section id="cover">
         <div id="cover-caption">
             <div class="container-fluid">
-                <div class="col-12">
+                <div class="col-10 col-lg-12 text-center mx-auto">
                     <h1 class="display-4 animated wow fadeIn" data-wow-delay="0.5s" data-wow-duration="4s">We create a culture around information security</h1>
                 </div>
             </div>
@@ -71,13 +74,13 @@
                 <div class="col-12">
                     <h1>Who We Are</h1>
                     <hr class="small bg-dark-gray" />
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-9">
-                        <h5 class="animated wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
-                            <b>Cyber@UC</b> is the official student led Information Security OWASP Organization for the University of Cincinnati. We spread the knowledge and importance of Information Security across all ages by doing outreaches or by
-                            collaboration with companies and organizations.
-                        </h5>
+                    <div class="row">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-9 mx-auto">
+                            <h5 class="animated wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
+                                <b style="color: rgba(227, 24, 55, 0.75);">Cyber@UC</b> is the official student led Information Security OWASP Organization for the University of Cincinnati. We spread the knowledge and importance of Information Security across all ages by doing outreaches or by
+                                collaboration with companies and organizations.
+                            </h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,17 +94,16 @@
                 <div class="col-lg-10 mx-auto">
                     <h1 class="text-center">About Us</h1>
                     <hr class="small bg-dark-gray" />
-                    <div class="row">
 
                         <div class="row row-regular animated wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
-                            <div class="col-md-6">
+                            <div class="col-12 col-md-6">
                                 <div class="portfolio-item">
                                     <a href="#">
                                         <img src="imgs/outreach.jpg" alt="Responsive Image" class="img-portfolio img-fluid">
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-12 col-md-6">
                                 <div class="main-copy">
                                     <h3><strong>Outreach</strong></h3>
                                     <h5>Travel out to local high schools to generate interest and teach about the importance of information security.</h5>
@@ -157,8 +159,6 @@
                             </div>
                         </div>
 
-
-                    </div>
                 </div>
             </div>
         </div>
@@ -176,24 +176,27 @@
                 <div class="col-12">
                     <h1 class="text-center">Connect With Us</h1>
                     <hr class="small bg-dark-gray" />
+                    <div class="row animated wow fadeInUp data-wow-delay="0.5s" data-wow-duration="1.5s"">
 
-                    <div class="title text-center">
-                        <h3>We would love to hear from you!</h3>
-                        <p>Events, collaboration oppurtunities, or even a coffee</p>
-                    </div>
+                        <div class="col-10 col-sm-12 title mx-auto text-center">
+                            <h3>We would love to hear from you!</h3>
+                            <p>Events, collaboration oppurtunities, or even a coffee</p>
+                        </div>
 
-                    <div class="col-12 col-lg-6 mx-auto">
-                        <form>
-                            <label>
-                                <input type="text" required />
-                                <div class="label-text">First name</div>
-                            </label>
-                            <label>
-                                <input type="text" required />
-                                <div class="label-text">Last name</div>
-                            </label>
-                            <button>Submit</button>
-                        </form>
+                        <div class="col-10 col-md-9 col-lg-7 mx-auto">
+                            <form>
+                                <label>
+                                    <input type="text" required />
+                                    <div class="label-text">First name</div>
+                                </label>
+                                <label>
+                                    <input type="text" required />
+                                    <div class="label-text">Last name</div>
+                                </label>
+                                <button>Submit</button>
+                            </form>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -205,24 +208,24 @@
             <div class="row ">
                 <div class="col-4 ">
                     <h4>
-                        &copy;2017 <strong style="color: rgba(227, 24, 55, 0.6) ">Cyber@UC</strong>
+                        &copy;2017 Cyber@UC</strong>
                     </h4>
                 </div>
                 <div class="col-2 ">
                 </div>
                 <div class="col-2 ">
                     <a href="https://www.facebook.com/UCyber-University-of-Cincinnati-OWASP-Chapter-1862762753939084/ " target="_blank ">
-                        <img src="imgs/facebook.png " class="img-responsive center-block img-hover " />
+                        <!-- <img src="imgs/facebook.png " class="img-responsive center-block img-hover " /> -->
                     </a>
                 </div>
                 <div class="col-2 ">
                     <a href="https://twitter.com/UCyb3r " target="_blank ">
-                        <img src="imgs/twitter.png " class="img-responsive center-block img-hover " />
+                        <!-- <img src="imgs/twitter.png " class="img-responsive center-block img-hover " /> -->
                     </a>
                 </div>
                 <div class="col-2 ">
                     <a href="mailto:ucyb3r@gmail.com ">
-                        <img src="imgs/instagram.png " class="img-responsive center-block img-hover " />
+                        <!-- <img src="imgs/instagram.png " class="img-responsive center-block img-hover " /> -->
                     </a>
                 </div>
             </div>
