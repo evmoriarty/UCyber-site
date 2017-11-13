@@ -31,6 +31,23 @@ body {
     padding: 12px 18px;
 }
 
+@media (max-width: 750px){
+
+    .toggle {
+        margin: 10px 45px 0 0;
+    }
+
+    #menu-toggle {
+        margin: 10px 10px 0 0;
+    }
+
+    #sidebar-wrapper.active {
+        right: 250px;
+        width: 210px;
+    }
+
+}
+
 .sidebar-nav span {
     color: #E31837;
 }
@@ -160,9 +177,17 @@ body .callout {
     background-color: #E1E1E1;
 }
 
-.img-portfolio:hover {
-    opacity: 0.8;
-    transition: opacity 0.2s ease-in-out;
+.portfolio-item img {
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.portfolio-item img:hover {
+    opacity: 1;
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 #about .row-regular {
