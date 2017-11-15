@@ -14,6 +14,15 @@ body {
     border-color: #f1f1f1;
 }
 
+body h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+section {
+    padding: 8em 0;
+}
 
 /* Navbar */
 
@@ -134,13 +143,8 @@ body {
 
 .header h1 {
     color: #F1F1F1;
-    font-size: 4em;
-}
-
-#whoWeAre,
-#about,
-#connect {
-    padding: 10em 0;
+    font-size: 3.7em;
+    text-transform: none;
 }
 
 
@@ -150,14 +154,6 @@ body {
     letter-spacing: 0.9px;
     line-height: 200%;
     padding-top: 2em;
-}
-
-#whoWeAre h1,
-#about h1,
-#connect h1 {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 0px;
 }
 
 
@@ -181,7 +177,7 @@ body .callout {
 /* About Us */
 
 .bg-light-grey {
-    background-color: #F9F9F9;
+    background-color: #F3F3F3;
 }
 
 .portfolio-item img {
@@ -226,25 +222,51 @@ body .callout {
 }
 
 #about h3 {
-    line-height: 125%;
+    line-height: 200%;
 }
 
 #about h5 {
-    line-height: 175%;
+    line-height: 160%;
+}
+
+
+/* Meeting Time */
+
+#meeting-time {
+    background: #333;
+    color: #F3F3F3;
+    padding: 5.5em 0;
+}
+
+#meeting-time h2 {
+    font-weight: bold;
+}
+
+#meeting-time h5 {
+    padding-top: 0.8em;
+}
+
+#meeting-time .meeting-images {
+    padding-top: 3.5em;
+    padding-bottom: 0.75em;
 }
 
 
 /* Connect With Us */
 
+
 #connect .title {
-    padding-top: 2em;
+    padding-top: 1.5em;
 }
 
+#connect h5 {
+    padding-top: 0.1em;
+}
 
 /* Form */
 
 form {
-    padding-top: 0.5em;
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -317,10 +339,10 @@ label input:valid+.label-text {
 }
 
 button {
-    background-color: #333;
-    border: 2px solid #333;
+    background-color: white;
+    border: 2px solid #E31837;
     border-radius: 27px;
-    color: white;
+    color: #E31837;
     cursor: pointer;
     font-size: 1.1em;
     margin-top: 0.75em;
@@ -336,8 +358,8 @@ button {
 button:hover,
 button:focus {
     border-color: #E31837;
-    background-color: white;
-    color: #333333;
+    background-color: #E31837;
+    color: white;
     outline: 0;
 }
 
@@ -347,11 +369,7 @@ button:focus {
 footer {
     background-color: #0E0E0E;
     color: #4A4A4A;
-    padding: 50px 0;
-}
-
-footer h5 {
-    padding: -5px 0;
+    padding: 40px 0;
 }
 
 footer .foot-links {
@@ -364,6 +382,7 @@ footer a {
 
 footer h4 {
     letter-spacing: 0.5px;
+    padding: 0.5em 0;
 }
 
 footer a:hover,
@@ -392,4 +411,49 @@ footer img:hover {
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+
+
+/* Members Page */
+#members {
+    background: #F9F9F9;
+}
+
+#top {
+    padding: 5em 0;
+}
+
+.members {
+    padding-top: 3em;
+}
+
+#members .my-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#members .member {
+    padding: 1em;
+}
+
+#members h3 {
+    margin: 0;
+    padding: 0.25em 0;
+}
+
+#members .position {
+    padding: 0.25em 0;
+}
+
+#members ul {
+    padding: 0;
+}
+
+#members .profile-pic img {
+    border-radius: 50%;
+}
+
+#members .social-links li {
+    list-style: none;
 }

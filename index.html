@@ -34,7 +34,8 @@
 
 </head>
 
-<body>
+<body id="landing-page">
+
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
         <i class="fa fa-bars"></i>
@@ -48,7 +49,7 @@
                 <a class="js-scroll-trigger" href="#top">Cyber@<span>UC</span></a>
             </li>
             <li>
-                <a class="js-scroll-trigger hvr-sweep-to-right" href="#about">Members</a>
+                <a class="hvr-sweep-to-right" href="members.html">Members</a>
             </li>
             <li>
                 <a class="js-scroll-trigger hvr-sweep-to-right" href="#connect" onclick=$( "#menu-close").click();>Contact</a>
@@ -60,7 +61,7 @@
 
     <header class="header" id="top">
         <div class="text-vertical-center">
-            <h1>We create a culture around Information Security</h1>
+            <h1 class="animated wow fadeIn" data-wow-duration="4.5s">We create a culture around Information Security</h1>
         </div>
     </header>
 
@@ -73,7 +74,7 @@
                     <hr class="small bg-dark-gray" />
                     <div class="row">
                         <div class="col-12 col-md-9 col-lg-7 col-xl-9 mx-auto">
-                            <h5 class="animated wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
+                            <h5 class="animated wow fadeInUp" data-wow-delay="0.25s" data-wow-duration="1.5s">
                                 <b style="color: rgba(227, 24, 55, 0.75);">Cyber@UC</b> is the official student led Information Security OWASP Organization for the University of Cincinnati. We spread the knowledge and importance of Information Security across all ages by doing outreaches or by
                                 collaboration with companies and organizations.
                             </h5>
@@ -92,7 +93,7 @@
                     <h1 class="text-center">About Us</h1>
                     <hr class="small bg-dark-gray" />
 
-                        <div class="row row-regular animated wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
+                        <div class="row row-regular animated wow fadeInUp" data-wow-delay="0.15s" data-wow-duration="1.5s">
                             <div class="col-12 col-md-6">
                                 <div class="portfolio-item">
                                     <img src="imgs/outreach.jpg" alt="Responsive Image" class="img-portfolio img-fluid">
@@ -106,7 +107,7 @@
                             </div>
                         </div>
 
-                        <div class="row row-reverse animated wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
+                        <div class="row row-reverse animated wow fadeInUp" data-wow-delay="0.15s" data-wow-duration="1.5s">
                             <div class="col-md-6">
                                 <div class="portfolio-item">
                                     <img src="imgs/research.jpg" alt="Responsive Image" class="img-portfolio img-fluid">
@@ -120,7 +121,7 @@
                             </div>
                         </div>
 
-                        <div class="row row-regular animated wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
+                        <div class="row row-regular animated wow fadeInUp" data-wow-delay="0.15s" data-wow-duration="1.5s">
                             <div class="col-md-6">
                                 <div class="portfolio-item">
                                     <img src="imgs/privacy.jpg" alt="Responsive Image" class="img-portfolio img-fluid">
@@ -134,7 +135,7 @@
                             </div>
                         </div>
 
-                        <div class="row row-reverse animated wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
+                        <div class="row row-reverse animated wow fadeInUp" data-wow-delay="0.15s" data-wow-duration="1.5s">
                             <div class="col-md-6">
                                 <div class="portfolio-item">
                                     <img src="imgs/collab.jpg" alt="Responsive Image" class="img-portfolio img-fluid">
@@ -158,6 +159,32 @@
         <!-- Insert here if you want -->
     </aside>
 
+    <!-- Meetings -->
+    <section id="meeting-time">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2>We meet Wednesdays</h2>
+                    <h3>6:30pm in Rhodes 850D</h3>
+                    <h5>Feel free to stop by and say hello</h5>
+                    <div class="row meeting-images">
+
+                        <div class="col-12 col-sm-4">
+                            <img src="./imgs/image.svg" class="img-fluid img-thumbnail" alt="...">
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <img src="./imgs/image.svg" class="img-fluid img-thumbnail" alt="...">
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <img src="./imgs/image.svg" class="img-fluid img-thumbnail" alt="...">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Connect With Us -->
     <section id="connect">
         <div class="container">
@@ -165,14 +192,14 @@
                 <div class="col-12">
                     <h1 class="text-center">Connect With Us</h1>
                     <hr class="small bg-dark-gray" />
-                    <div class="row animated wow fadeInUp data-wow-delay="0.5s" data-wow-duration="1.5s"">
+                    <div class="row">
 
                         <div class="col-10 col-sm-12 title mx-auto text-center">
-                            <h3>We would love to hear from you!</h3>
-                            <p>Events, collaboration oppurtunities, or even a coffee</p>
+                            <h3>We look forward to hearing from you</h3>
+                            <h5>Events, collaboration, or even grab some coffee</h5>
                         </div>
 
-                        <div class="col-10 col-md-9 col-lg-7 mx-auto">
+                        <div class="col-10 col-md-9 col-lg-7 mx-auto animated wow fadeInUp" data-wow-delay="0.25s" data-wow-duration="1.1s">
                             <form>
                                 <label>
                                     <input type="text" required />
@@ -208,19 +235,19 @@
                         &copy;2017 Cyber@UC</strong>
                     </h4>
                 </div>
-                <div class="col-4 col-sm-2 col-md-1 ml-sm-auto">
-                    <a href="https://www.facebook.com/UCyber-University-of-Cincinnati-OWASP-Chapter-1862762753939084/ " target="_blank ">
+                <div class="col-4 col-sm-2 col-md-1 ml-sm-auto" style="padding-top:0.5em; padding-bottom:0.5em;">
+                    <a href="https://www.facebook.com/UCyber-University-of-Cincinnati-OWASP-Chapter-1862762753939084/" target="_blank">
                         <img src="imgs/facebook.png" class="img-responsive center-block img-hover" />
                     </a>
                 </div>
-                <div class="col-4 col-sm-2 col-md-1">
-                    <a href="https://twitter.com/UCyb3r " target="_blank ">
-                        <img src="imgs/twitter.png " class="img-responsive center-block img-hover " />
+                <div class="col-4 col-sm-2 col-md-1" style="padding-top:0.5em; padding-bottom:0.5em;">
+                    <a href="https://twitter.com/UCyb3r" target="_blank ">
+                        <img src="imgs/twitter.png " class="img-responsive center-block img-hover" />
                     </a>
                 </div>
-                <div class="col-4 col-sm-2 col-md-1">
-                    <a href="mailto:ucyb3r@gmail.com ">
-                        <img src="imgs/email.png " class="img-responsive center-block img-hover " />
+                <div class="col-4 col-sm-2 col-md-1" style="padding-top:0.5em; padding-bottom:0.5em;">
+                    <a href="mailto:ucyb3r@gmail.com">
+                        <img src="imgs/email.png " class="img-responsive center-block img-hover" />
                     </a>
                 </div>
             </div>
