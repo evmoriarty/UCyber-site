@@ -136,6 +136,7 @@ body {
 #cover {
     color: #fff;
     height: 100%;
+    max-width: 100%;
     text-align: center;
     display: flex;
     align-items: center;
