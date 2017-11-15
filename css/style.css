@@ -131,27 +131,6 @@ body {
     font-size: 4em;
 }
 
-/*
-#cover {
-    color: #fff;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    background: #222 url(../imgs/bg.jpg) no-repeat center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#cover-caption {
-    width: 100%;
-}
-*/
-
 #whoWeAre,
 #about,
 #connect {
@@ -176,14 +155,14 @@ body {
 }
 
 
-/* Callout 1 */
+/* Callout */
 
 body .callout {
     display: table;
     width: 100%;
     height: 600px;
     color: #fff;
-    background: url(../imgs/callout.jpg) no-repeat center;
+    background: url(../imgs/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
