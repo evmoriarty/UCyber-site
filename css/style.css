@@ -117,6 +117,19 @@ body {
 
 /* Header */
 
+.header {
+    background: url(../imgs/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header h1 {
+    color: #F1F1F1;
+    font-size: 4em;
+}
 
 #cover {
     color: #fff;
