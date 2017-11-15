@@ -139,7 +139,7 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
-    background: #222 url(../imgs/bg.jpg) no-repeat top center scroll;
+    background: #222 url(../imgs/bg.jpg) no-repeat center;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -182,7 +182,7 @@ body .callout {
     width: 100%;
     height: 600px;
     color: #fff;
-    background: url(../imgs/callout.jpg) no-repeat top center scroll;
+    background: url(../imgs/callout.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
