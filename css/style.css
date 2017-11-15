@@ -46,6 +46,11 @@ body {
         width: 210px;
     }
 
+    .header,
+    .callout {
+        background-attachment: scroll !important;
+    }
+
 }
 
 .sidebar-nav span {
@@ -124,6 +129,7 @@ body {
     -ms-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .header h1 {
@@ -158,16 +164,17 @@ body {
 /* Callout */
 
 body .callout {
-    /*display: table;
+    display: table;
     width: 100%;
-    height: 600px;
+    height: 550px;
     color: #fff;
     background: url(../imgs/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
