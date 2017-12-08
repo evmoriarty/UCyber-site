@@ -15,13 +15,21 @@ body {
 }
 
 body h1 {
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 2.7em;
     margin-top: 0px;
+    letter-spacing: 0.025em;
 }
 
-section {
-    padding: 8em 0;
+body h3 {
+    font-size: 2em;
+}
+
+body h5 {
+    font-size: 1.2em;
+}
+
+.no-padding {
+    padding: 0;
 }
 
 /* Navbar */
@@ -55,8 +63,7 @@ section {
         width: 210px;
     }
 
-    .header,
-    .callout {
+    .header {
         background-attachment: scroll !important;
     }
 
@@ -139,75 +146,80 @@ section {
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
+    height: auto;
 }
 
 .header h1 {
     color: #F1F1F1;
     font-size: 3.7em;
-    text-transform: none;
+    padding: 400px 0;
 }
 
 
 /*Who We Are */
 
-#whoWeAre h5 {
-    letter-spacing: 0.9px;
-    line-height: 200%;
-    padding-top: 2em;
+#whoWeAre {
+    padding: 15em 0;
 }
 
-
-/* Callout */
-
-body .callout {
-    display: table;
-    width: 100%;
-    height: 550px;
-    color: #fff;
-    background: url(../imgs/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
+#whoWeAre h5 {
+    line-height: 180%;
+    padding-top: 2em;
 }
 
 
 /* About Us */
 
-.bg-light-grey {
-    background-color: #F3F3F3;
+#about {
+    /*background: #FCF6F6;*/
+    position: relative;
+    padding: 6em 0;
+}
+
+#about:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 180%;
+    top: 0;
+    transform: skewY(-4deg);
+    background: #FCF6F6;
 }
 
 .portfolio-item img {
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .portfolio-item img:hover {
     opacity: 1;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.025);
+    -moz-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    -o-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+#about .content {
+    padding-top: 2em;
 }
 
 #about .row-regular {
-    padding: 3.5em 0 1em 0;
+    padding: 1.75em 0;
 }
 
 #about .row-reverse {
     flex-direction: row-reverse;
-    padding: 3.5em 0 1em 0;
+    padding: 1.75em 0;
 }
 
 #about img {
     border-radius: 50%;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.15);
 }
 
 #about .main-copy {
@@ -223,129 +235,69 @@ body .callout {
 
 #about h3 {
     line-height: 200%;
+    color: rgba(227, 24, 55, 0.8);
 }
 
 #about h5 {
-    line-height: 160%;
+    line-height: 180%;
 }
 
 
 /* Meeting Time */
 
+
 #meeting-time {
-    background: #333;
-    color: #F3F3F3;
+    padding: 6em 0;
 }
+
 
 #meeting-time h2 {
     font-weight: bold;
 }
 
-#meeting-time h5 {
-    padding-top: 0.8em;
+#meeting-time .maps-location {
+    padding: 2.6em 0;
+}
+
+#meeting-time .imgs-display {
+    padding-top: 1em;
 }
 
 #meeting-time .meeting-images {
-    padding-top: 3.5em;
+    padding-top: 2em;
     padding-bottom: 0.75em;
 }
 
 
 /* Connect With Us */
 
+#connect {
+    padding: 6em 0;
+    background: #F1F1F1;
+}
 
 #connect .title {
-    padding-top: 1.5em;
+    /*padding-top: 1.5em;*/
 }
 
 #connect h5 {
     padding-top: 0.1em;
 }
 
-/* Form */
-
-form {
-    padding-top: 2em;
+#connect .content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
-label {
-    display: block;
-    letter-spacing: 4px;
-    padding-top: 0.5em;
-    width: 100%
-}
-
-label .label-text {
-    color: #9B9B9B;
-    cursor: text;
-    font-size: 1.1em;
-    line-height: 20px;
-    text-transform: uppercase;
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
-    transform: translateY(-30px);
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-label input {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid #4A4A4A;
-    color: #000;
-    font-size: 2em;
-    letter-spacing: -1px;
-    outline: 0;
-    padding: 5px 10px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    width: 100%;
-}
-
-label input:focus {
-    width: 100%;
-    border-bottom: 2px solid #E31837;
-}
-
-label input:focus+.label-text {
-    color: #E31837;
-    font-size: 0.8em;
-    -webkit-transform: translateY(-70px);
-    -moz-transform: translateY(-70px);
-    -ms-transform: translateY(-70px);
-    -o-transform: translateY(-70px);
-    transform: translateY(-70px);
-}
-
-label input:valid+.label-text {
-    font-size: 13px;
-    -webkit-transform: translateY(-74px);
-    -moz-transform: translateY(-74px);
-    -ms-transform: translateY(-74px);
-    -o-transform: translateY(-74px);
-    transform: translateY(-74px);
-}
-
-button {
+#connect button {
     background-color: white;
     border: 2px solid #E31837;
     border-radius: 27px;
     color: #E31837;
     cursor: pointer;
     font-size: 1.1em;
-    margin-top: 0.75em;
-    padding: 15px 30px;
+    padding: 15px 16px;
     text-transform: uppercase;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
@@ -354,8 +306,8 @@ button {
     transition: all .4s;
 }
 
-button:hover,
-button:focus {
+#connect button:hover,
+#connect button:focus {
     border-color: #E31837;
     background-color: #E31837;
     color: white;
@@ -416,7 +368,9 @@ footer img:hover {
 
 /* Members Page */
 #members {
-    background: #F9F9F9;
+    box-shadow: 0 -16px 45px rgba(0,0,0,0.15);
+    transform: skewY(-6deg);
+    transform-origin: 0;
 }
 
 
@@ -424,9 +378,13 @@ footer img:hover {
 
 .members-header {
     height: 650px;
-    background: url(../imgs/members-bg.png) no-repeat center center scroll;
-    background-attachment: fixed;
-    background-size: cover;
+    background: -webkit-linear-gradient(left, #E31837 , #CC1631);
+    transform: skewY(-6deg);
+    transform-origin: 0;
+}
+
+.members-header .text-vertical-center {
+    transform: skewY(6deg);
 }
 
 #members .my-flex {
@@ -434,8 +392,14 @@ footer img:hover {
     justify-content: center;
 }
 
+#members .members-section {
+    transform: skewY(6deg);
+    transform-origin: 0;
+}
+
 #members .member {
     padding: 1em 0;
+
 }
 
 #members h3 {
