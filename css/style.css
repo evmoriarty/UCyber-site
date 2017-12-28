@@ -260,7 +260,11 @@ body h5 {
     background: #F1F1F1;
 }
 
-#connect h5 {
+#connect h3 {
+    color: #E31837;
+}
+
+#connect h4 {
     padding-top: 0.1em;
 }
 
@@ -270,11 +274,12 @@ body h5 {
     align-items: center;
 }
 
+
 #connect button {
     background-color: #E31837;
     box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     border: none;
-    border-radius: 27px;
+    border-radius: 8px;
     color: #fff;
     cursor: pointer;
     font-size: 1.1em;
@@ -314,7 +319,7 @@ footer a {
 footer h4 {
     letter-spacing: 0.5px;
     padding: 0.5em 0;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 footer a:hover,
@@ -347,7 +352,13 @@ footer img:hover {
 
 /* Media Queries */
 
-@media (max-width: 750px){
+@media (max-width: 992px) {
+    #connect .contact-btn {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 750px) {
 
     .toggle {
         margin: 10px 45px 0 0;
