@@ -274,6 +274,10 @@ body h5 {
     align-items: center;
 }
 
+#connect .contact-btn {
+    text-align: center;
+}
+
 
 #connect button {
     background-color: #E31837;
@@ -355,6 +359,7 @@ footer img:hover {
 @media (max-width: 992px) {
     #connect .contact-btn {
         padding-top: 20px;
+        text-align: initial;
     }
 }
 
