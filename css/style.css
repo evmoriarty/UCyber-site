@@ -130,7 +130,7 @@ body h5 {
 
 .header h1 {
     color: #F1F1F1;
-    font-size: 3.7em;
+    font-size: 3.4em;
     padding: 400px 0;
 }
 
@@ -240,11 +240,11 @@ body h5 {
 }
 
 #meeting-time .carousel {
-    padding-top: 1.5em;
+    padding-top: 2em;
 }
 
 #meeting-time .imgs-display {
-    padding-top: 1em;
+    padding-top: 2em;
 }
 
 #meeting-time .meeting-images {
@@ -357,13 +357,23 @@ footer img:hover {
 /* Media Queries */
 
 @media (max-width: 992px) {
+
+    .header h1 {
+        font-size: 3.2em;
+    }
+
     #connect .contact-btn {
         padding-top: 20px;
         text-align: initial;
     }
+
 }
 
 @media (max-width: 750px) {
+
+    .header h1 {
+        font-size: 2.8em;
+    }
 
     .toggle {
         margin: 10px 45px 0 0;
@@ -450,4 +460,46 @@ footer img:hover {
 
 #members .social-links li {
     list-style: none;
+}
+
+
+
+/* Blog Page */
+
+.blog-header {
+    background: #da6060;
+}
+
+.blog-header h1 {
+    padding: 200px;
+    color: white;
+}
+
+#post-feed {
+    padding-top: 40px;
+    background: #FCF6F6;
+    display: flex;
+}
+
+#post-feed .blog-post {
+    margin: 0 20px 40px;
+    flex: 1 1 300px;
+    border-radius: 5px;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+}
+
+#post-feed .blog-post a {
+    text-decoration: none;
+    color: #212529;
+}
+
+#post-feed .blog-post-content {
+    padding: 25px 25px 0;
+}
+
+#post-feed .blog-post .blog-post-image {
+    width: auto;
+    height: 200px;
+    background: #c5d2d9 no-repeat 50%;
+    background-size: cover;
 }
